@@ -26,3 +26,20 @@ the Progressive Probabilistic Hough Transform is discussed in Section 6.
 - houghpeaks: Detects lines by interpreting the accumulator. In this worksheet the threshold was set to 20% of the maximum value in the accumulator, and the ***suppression neighbourhood*** was set to approximately 5% of the resolution of r and θ respectively.
 - houghlines: Converts infinite lines to finite lines. In this worksheet, the ***minimum length of a line*** was set to 30 pixels, and the algorithm was allowed ***to connect lines through holes of up to 30 pixels***.
 ### Progressive Probabilistic Hough Transform (PPHT)
+
+## python openCV
+```python=
+# Define the Hough transform parameters
+# Make a blank the same size as our image to draw on
+rho = 1
+theta = np.pi/180
+threshold = 1
+min_line_length = 10
+max_line_gap = 1
+line_image = np.copy(image)*0 #creating a blank to draw lines on
+
+# Run Hough on edge detected image
+lines = cv2.HoughLinesP(masked_edges, rho, theta, threshold, np.array([]),
+                            min_line_length, max_line_gap)
+
+```
