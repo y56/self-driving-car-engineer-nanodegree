@@ -1,3 +1,5 @@
+###### tags: `self-driving-car-engineer-nanodegree` `computer-vision` `learning`
+
 # Canny Edges
 
 ref = https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html
