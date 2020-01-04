@@ -1,4 +1,4 @@
-###### tags: `learning` `computer-vision`
+###### tags: `self-driving-car-engineer-nanodegree` `computer-vision` `learning`
 # Line Detection by Hough Transformation
 
 ## there are two kinds of resolutions
